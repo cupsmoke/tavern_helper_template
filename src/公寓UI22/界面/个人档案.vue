@@ -1,15 +1,12 @@
 <template>
   <div class="view">
-    <div class="page-header">
-      <BackButton @back="$emit('back')" />
-      <h2 class="page-title">👤个人档案</h2>
-    </div>
+    <PageHeader title="👤个人档案" @back="$emit('back')" />
 
     <!-- 基本信息卡片 -->
     <div class="profile-header-card card">
       <div class="profile-avatar-section">
         <div class="profile-avatar">
-          <div class="avatar-placeholder">{{ profile.adminName.charAt(0) }}</div>
+          <div class="avatar-placeholder user-avatar"></div>
         </div>
         <div class="profile-basic-info">
           <h3 class="profile-name">{{ profile.adminName }}</h3>
@@ -87,21 +84,14 @@
 </template>
 
 <script setup lang="ts">
-import { computed, ref } from 'vue';
-import BackButton from '../组件/BackButton.vue';
+import { computed, onMounted } from 'vue';
+import { profile } from '../数据/profile';
+import PageHeader from '../组件/PageHeader.vue';
 
 defineEmits(['back']);
 
-const profile = ref({
-  adminName: '林小美',
-  identity: '公寓管理员',
-  appearance: '黑色长发，身高165cm，常穿制服',
-  statusTags: ['管理员', '认真', '亲和力'],
-  money: 12500,
-  currentEnergy: 80,
-  maxEnergy: 100,
-  corruption: 25,
-  skills: [{ name: '沟通技巧', level: '3', description: '与住户沟通时效果提升' }],
+onMounted(() => {
+  profile.value.adminName = substitudeMacros('{{user}}');
 });
 
 const energyProgress = computed(() => {
@@ -127,21 +117,7 @@ $color-accent-gold: #f39c12;
   overflow-y: auto;
   background-color: $color-bg-dark;
   color: #ecf0f1;
-  padding-top: 45px;
-}
-
-.page-header {
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-  position: relative;
-  justify-content: center;
-}
-
-.page-title {
-  font-size: 22px;
-  font-weight: bold;
-  margin: 0;
+  padding-top: 30px;
 }
 
 .card {
@@ -181,7 +157,6 @@ $color-accent-gold: #f39c12;
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  background: linear-gradient(135deg, $color-accent-blue, $color-accent-purple);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -189,6 +164,8 @@ $color-accent-gold: #f39c12;
   color: white;
   font-weight: bold;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  background-size: cover;
+  background-position: center;
 }
 
 .profile-basic-info {

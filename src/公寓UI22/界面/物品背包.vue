@@ -1,19 +1,7 @@
 <template>
   <div class="view">
-    <div class="page-header">
-      <BackButton @back="$emit('back')" />
-      <h2 class="page-title">🎒物品背包</h2>
-    </div>
-    <div class="tab-nav">
-      <button
-        v-for="tab in Object.keys(inventory)"
-        :key="tab"
-        :class="['tab-button', { active: activeTab === tab }]"
-        @click="activeTab = tab"
-      >
-        {{ tab }}
-      </button>
-    </div>
+    <PageHeader title="🎒物品背包" @back="$emit('back')" />
+    <TabNav :tabs="Object.keys(inventory)" v-model:activeTab="activeTab" />
     <div class="inventory-content">
       <div v-for="(items, category) in inventory" :key="category">
         <div v-if="activeTab === category" class="card">
@@ -30,9 +18,10 @@
 
 <script setup lang="ts">
 import { ref } from 'vue';
-import BackButton from '../组件/BackButton.vue';
 import InfoModal from '../组件/InfoModal.vue';
+import PageHeader from '../组件/PageHeader.vue';
 import RarityTag from '../组件/RarityTag.vue';
+import TabNav from '../组件/TabNav.vue';
 
 defineEmits(['back']);
 
@@ -70,43 +59,6 @@ $color-accent-blue: #3498db;
   background-color: $color-bg-dark;
   color: #ecf0f1;
   padding-top: 45px;
-}
-
-.page-header {
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-  position: relative;
-  justify-content: center;
-}
-
-.page-title {
-  font-size: 22px;
-  font-weight: bold;
-  margin: 0;
-}
-
-.tab-nav {
-  display: flex;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  margin-bottom: 15px;
-  overflow-x: auto;
-}
-
-.tab-button {
-  padding: 10px 15px;
-  cursor: pointer;
-  border: none;
-  background: none;
-  color: #aaa;
-  font-size: 15px;
-  white-space: nowrap;
-  transition: color 0.3s;
-}
-
-.tab-button.active {
-  color: $color-accent-blue;
-  border-bottom: 2px solid $color-accent-blue;
 }
 
 .card {

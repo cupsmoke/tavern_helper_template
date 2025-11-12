@@ -1,15 +1,121 @@
 export const characterAvatarMap: Record<string, string> = {
-  张伟: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&h=200&q=80',
-  王芳: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&h=200&q=80',
+  叶莲娜·科瓦奇: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTILxGOykAeBwZ4ZDdD_305gR9bbo_xBdSoTw&s',
+  贝瑟妮·琼斯: 'https://pbs.twimg.com/profile_images/1914532532680581124/p4q0j2SV_400x400.jpg',
+  乔治安娜·索拉里: 'https://www.hola.com/us/horizon/43/2feb396fc6ca-venice-italy-georgina-rodriguez-attends-a-red-carpet-for-the-movie-enea-at-the-8.jpg',
+  安娜: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ235iCzXlWG51aWeg-yCX73c9zxJ2YOx6Hdw&s',
+  奥克萨娜·佐藤: 'https://www.panthalassanews.com/assets/images/biography/thumb/louisa-khovanski_image.jpg',
+
   // ... 其他角色的头像URL
 };
 
 export const characterPhotosMap: Record<string, { photos: string[]; descriptions: string[] }> = {
-  张伟: {
+  叶莲娜·科瓦奇: {
     photos: [
-      'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&h=400&q=80',
+      'https://pbs.twimg.com/media/Ghig_qoWwAA9Bwu.jpg',
+      'https://pbs.twimg.com/media/GhrAAKfWAAAz3dT.jpg',
+      'https://pbs.twimg.com/media/GlIUasSW8AA8EuB.jpg',
+      'https://pbs.twimg.com/media/Govl_jEXIAAIGpP.jpg',
+      'https://pbs.twimg.com/media/GkjonCmWwAAPIsx.jpg',
+      'https://pbs.twimg.com/media/Gp3ZXaOWsAAixl4.jpg',
+      'https://pbs.twimg.com/media/GsrOVmmXsAA0BHU.jpg',
+      'https://pbs.twimg.com/media/Gy4bhPqWcAAjauA.jpg',
+      'https://pbs.twimg.com/media/F3qvXDqXgBEUF0r.jpg',
     ],
-    descriptions: ['下班后的休闲时光'],
+    descriptions: [
+      '渔网·雌伏',
+      '渔网·欲望',
+      '窗边眺望',
+      '兔女郎·背影',
+      '厨房',
+      '游戏日',
+      '泡澡',
+      '厨房2',
+      '新生',
+    ],
+  },
+  贝瑟妮·琼斯: {
+    photos: [
+      'https://pbs.twimg.com/media/G3fNMXrWkAAu66D.jpg',
+      'https://pbs.twimg.com/media/Gl2Yz6TaAAAjgdK.jpg',
+      'https://pbs.twimg.com/media/G4JNFnSWcAAXlG-.jpg',
+      'https://pbs.twimg.com/media/Gz3KBezbAAUoDUB.jpg',
+      'https://pbs.twimg.com/media/G05_en1aEAYJnEj.jpg',
+      'https://pbs.twimg.com/media/GoqnN4nXEAE4gAI.jpg',
+      'https://pbs.twimg.com/media/Gliv4ZyawAA9RW-.jpg',
+      'https://pbs.twimg.com/media/G1OVMePbQAA1zMO.jpg',
+      'https://pbs.twimg.com/media/Gdz3kfgbEAAwLtb.jpg',
+    ],
+    descriptions: [
+      '居家自拍',
+      '瑜伽·下犬势',
+      '化妆牛仔',
+      '迎宾',
+      '一起露出',
+      '倒立',
+      '项圈',
+      '赤裸骑行派对',
+      '公园吊起',
+    ],
+  },
+  乔治安娜·索拉里: {
+    photos: [
+      'https://pbs.twimg.com/media/FxTzGbvacAAu6jx.jpg:orig',
+    ],
+    descriptions: [
+      '泳装女皇',
+    ],
+  },
+  安娜: {
+    photos: [
+      'https://pbs.twimg.com/media/GfhEYB8WAAAT8cD.jpg',
+      'https://pbs.twimg.com/media/FsRh3rYWYAEUt3n.jpg',
+      'https://pbs.twimg.com/media/GILGwPcWwAA5KsR.jpg',
+      'https://pbs.twimg.com/media/F8FupeUXAAAWCkR.jpg',
+      'https://pbs.twimg.com/media/F9zh9zVW0AAzT9d.jpg',
+    ],
+    descriptions: [
+      '冬日雪景',
+      '渔网',
+      '冬日雪景2',
+      'mini',
+      '兔女郎',
+    ],
+  },
+  奥克萨娜·佐藤: {
+    photos: [
+      'https://pbs.twimg.com/media/G5P6IQ5WEAEBQzl.jpg',
+      'https://pbs.twimg.com/media/G5fS8RWW0AARQSA.jpg',
+      'https://pbs.twimg.com/media/G4mWLjfW4AA1SFG.jpg',
+      'https://pbs.twimg.com/media/G2WaOZyXMAAhIzn.jpg',
+      'https://pbs.twimg.com/media/G2Gp3ZjWUAABupq.jpg',
+      'https://pbs.twimg.com/media/G1ds2JZWAAsev77.jpg',
+      'https://pbs.twimg.com/media/G1ds2JdWABYgVk1.jpg',
+      'https://pbs.twimg.com/media/G1YWt_nWUAA18NK.jpg',
+      'https://pbs.twimg.com/media/G0A5hrKXsAEYfTh.jpg',
+      'https://pbs.twimg.com/media/GwzBZC7XMAM-LMn.jpg',
+      'https://pbs.twimg.com/media/Gre5JZAWEAEgcK1.jpg:small',
+      'https://pbs.twimg.com/media/GogeF1zXgAA2bVo.jpg:small',
+      'https://pbs.twimg.com/media/Fmm0i1gWYAAkzTm.jpg',
+      'https://img10.joyreactor.com/pics/post/erotic-erotic-piercing-boobs-9007271.jpeg',
+      'https://img10.joyreactor.com/pics/post/erotic-butt-open-air-8687325.png',
+    ],
+    descriptions: [
+      '日常1',
+      '冬景',
+      '万圣节',
+      '冬景',
+      '夏日俯瞰',
+      '亲近自然',
+      '亲近自然远景',
+      '沙发阅读',
+      '沙滩',
+      '街头',
+      '居家',
+      '楼梯',
+      '购物',
+      '河边',
+      '露营',
+    ],
   },
   // ... 其他角色的照片数据
 };

@@ -7,13 +7,18 @@
       </div>
       <div class="character-title">
         <h3 class="character-name">{{ character.name || 'N/A' }}</h3>
-        <p class="character-role">{{ character.role || '未知' }}</p>
+        <div class="character-role">
+          <template v-if="roleTags.length">
+            <span v-for="tag in roleTags" :key="tag" class="role-tag">{{ tag }}</span>
+          </template>
+          <span v-else class="character-role-placeholder">{{ '未知' }}</span>
+        </div>
       </div>
     </div>
 
     <div class="info-row">
       <span class="info-label">好感度</span>
-      <span class="affection-value">{{ character.affectionValue || 0 }}/{{ character.affectionMax || 100 }}</span>
+      <span class="affection-value">{{ character.affectionValue || 0 }}/100</span>
     </div>
     <div class="info-row">
       <span class="info-label">关系阶段</span>
@@ -37,9 +42,9 @@
 </template>
 
 <script setup lang="ts">
-import { defineEmits, defineProps } from 'vue';
+import { computed, defineEmits, defineProps } from 'vue';
 
-defineProps({
+const props = defineProps({
   character: {
     type: Object,
     required: true,
@@ -51,6 +56,14 @@ defineProps({
 });
 
 defineEmits(['avatarClick', 'showMonologue', 'showEvents', 'showPhotos']);
+
+const roleTags = computed(() => {
+  if (!props.character.role) return [];
+  return props.character.role
+    .split('#')
+    .map((s: string) => s.trim())
+    .filter(Boolean);
+});
 </script>
 
 <style lang="scss" scoped>
@@ -105,9 +118,26 @@ $color-text-light: #ecf0f1;
 }
 
 .character-role {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin: 0;
+  min-height: 18px; /* To prevent layout shift */
+}
+
+.character-role-placeholder {
   font-size: 13px;
   color: #ccc;
-  margin: 0;
+}
+
+.role-tag {
+  padding: 3px 8px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 600;
+  background-color: #3498db;
+  color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 .info-row {

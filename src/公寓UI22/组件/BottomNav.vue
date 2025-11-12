@@ -1,13 +1,15 @@
 <template>
   <div class="quick-nav-buttons">
-    <div id="quick-top-button"></div>
-    <div id="quick-home-button"></div>
-    <div id="quick-back-button"></div>
+    <div id="quick-top-button" @click="$emit('to-top')"></div>
+    <div id="quick-home-button" @click="$emit('go-home')"></div>
+    <div id="quick-back-button" @click="$emit('go-back')"></div>
   </div>
 </template>
 
 <script setup lang="ts">
-// No script needed for this static component yet
+import { defineEmits } from 'vue';
+
+defineEmits(['to-top', 'go-home', 'go-back']);
 </script>
 
 <style lang="scss" scoped>

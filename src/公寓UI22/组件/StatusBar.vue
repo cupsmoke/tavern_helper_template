@@ -4,18 +4,20 @@
       <span>{{ currentTime }}</span>
     </div>
     <div class="status-bar-right">
-      <span><i class="icon-wifi"></i></span>
-      <span><i class="icon-battery"></i></span>
+      <span id="status-bar-energy">✨ {{ profile.currentEnergy }} / {{ profile.maxEnergy }}</span>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
+import { profile } from '../数据/profile';
 
-const currentTime = ref('10:00');
-const wifiIcon = ref('icon-wifi'); // Placeholder for actual icon component/class
-const batteryIcon = ref('icon-battery'); // Placeholder for actual icon component/class
+defineProps({
+  currentTime: {
+    type: String,
+    required: true,
+  },
+});
 
 // In a real app, you would update currentTime dynamically
 // For example, using setInterval to update the time every second
@@ -32,7 +34,7 @@ const batteryIcon = ref('icon-battery'); // Placeholder for actual icon componen
   left: 0;
   width: 100%;
   height: 30px; /* Matches the reference HTML */
-  background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent background */
+  background-color: #171f27; /* Solid black background */
   border-radius: 25px 25px 0 0; /* Match screen radius */
   display: flex;
   justify-content: space-between;
@@ -42,6 +44,7 @@ const batteryIcon = ref('icon-battery'); // Placeholder for actual icon componen
   z-index: 101; /* Ensure it's above other content */
   font-size: 14px; /* Slightly larger font */
   font-weight: 500;
+  backdrop-filter: blur(100px);
 }
 
 .status-bar-left {
@@ -58,12 +61,7 @@ const batteryIcon = ref('icon-battery'); // Placeholder for actual icon componen
   margin-left: 8px;
 }
 
-/* Placeholder for icons - in a real app, you'd use an icon library or SVG */
-.icon-wifi::before {
-  content: '📶'; /* Wi-Fi symbol */
-}
-
-.icon-battery::before {
-  content: '🔋'; /* Battery symbol */
+#status-bar-energy {
+  color: #27ae60; /* --color-accent-green */
 }
 </style>

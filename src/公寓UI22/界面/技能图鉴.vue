@@ -1,9 +1,6 @@
 <template>
   <div class="view">
-    <div class="page-header">
-      <BackButton @back="$emit('back')" />
-      <h2 class="page-title">⚡技能图鉴</h2>
-    </div>
+    <PageHeader title="⚡技能图鉴" @back="$emit('back')" />
     <div class="card">
       <div v-for="(skill, index) in skills" :key="index" class="list-item" @click="showSkillInfo(skill)">
         {{ skill.name }}
@@ -16,8 +13,8 @@
 
 <script setup lang="ts">
 import { ref } from 'vue';
-import BackButton from '../组件/BackButton.vue';
 import InfoModal from '../组件/InfoModal.vue';
+import PageHeader from '../组件/PageHeader.vue';
 import RarityTag from '../组件/RarityTag.vue';
 
 defineEmits(['back']);
@@ -54,21 +51,7 @@ $rarity-unknown: #666666;
   overflow-y: auto;
   background-color: $color-bg-dark;
   color: #ecf0f1;
-  padding-top: 45px;
-}
-
-.page-header {
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-  position: relative;
-  justify-content: center;
-}
-
-.page-title {
-  font-size: 22px;
-  font-weight: bold;
-  margin: 0;
+  padding-top: 30px;
 }
 
 .card {
