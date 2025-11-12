@@ -135,7 +135,7 @@ $color-text-light: #ecf0f1;
   border-radius: 12px;
   font-size: 11px;
   font-weight: 600;
-  background-color: #3498db;
+  background-color: #dbac34;
   color: white;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }

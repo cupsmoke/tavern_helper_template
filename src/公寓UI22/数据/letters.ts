@@ -48,9 +48,10 @@ export const letters: Letter[] = [
     },
   },
   {
-    title: '美国甜心[们]',
+    title: '金丝雀筑巢记',
     // 金丝雀养成日记
     // 金丝雀筑巢记
+    // 美国甜心[们]
     from: 'us',
     status: '已完成',
     character: {
@@ -67,18 +68,35 @@ export const letters: Letter[] = [
     },
   },
   {
-    title: '慰藉的越界',
+    title: '西区的迷途白雪',
     from: 'ua',
     status: '进行中',
     character: {
       name: '奥克萨娜·佐藤',
-      role: '#twi@angelicfukdoll #迷失在东方伊甸园的丰饶果实 #西区的迷途白雪',
+      role: '#twi@angelicfukdoll #迷失在东方伊甸园的丰饶果实',
       // 迷航的丰饶之船
       // 西区的迷途白雪
       affectionValue: 25,
       appearance: '--',
       relationshipStage: '陌生',
       husbandStatus: '已婚',
+      innerMonologue: '...',
+      triggerableEvents: '--',
+    },
+  },
+  {
+    title: '庇护所的寄生花',
+    from: 'ua',
+    status: '进行中',
+    character: {
+      name: '伊莉娜·科瓦连科',
+      role: '#twi@milada_moore #迷途的丰腴之鸽',
+      // 迷航的丰饶之船
+      // 西区的迷途白雪
+      affectionValue: 25,
+      appearance: '--',
+      relationshipStage: '陌生',
+      husbandStatus: '未婚',
       innerMonologue: '...',
       triggerableEvents: '--',
     },
