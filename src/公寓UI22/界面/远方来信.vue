@@ -25,7 +25,7 @@
     </div>
     <div v-else>
       <PageHeader :title="selectedLetter.title" @back="selectedLetter = null" />
-      <CharacterDetail :character="selectedLetter.character" />
+      <CharacterDetail v-for="character in selectedLetter.characters" :key="character.name" :character="character" />
     </div>
   </div>
 </template>

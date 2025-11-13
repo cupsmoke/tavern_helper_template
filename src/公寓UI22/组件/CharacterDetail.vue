@@ -2,7 +2,7 @@
   <div>
     <CharacterCard
       :character="character"
-      :avatar-url="characterAvatarMap[character.name]"
+      :avatar-url="characterAssetsMap[character.name]?.avatar"
       @showMonologue="isMonologueVisible = true"
       @showEvents="isEventsVisible = true"
       @showPhotos="showPhotosPopup"
@@ -43,7 +43,7 @@ import AvatarPopup from '../弹出/AvatarPopup.vue';
 import EventsPopup from '../弹出/EventsPopup.vue';
 import MonologuePopup from '../弹出/MonologuePopup.vue';
 import PhotosPopup from '../弹出/PhotosPopup.vue';
-import { characterAvatarMap, characterPhotosMap } from '../数据/characterAssets';
+import { characterAssetsMap } from '../数据/characterAssets';
 import CharacterCard from './CharacterCard.vue';
 
 const props = defineProps({
@@ -63,14 +63,14 @@ const characterPhotoDescriptions = ref<string[]>([]);
 const characterAvatar = ref('');
 
 const showPhotosPopup = () => {
-  const photosData = characterPhotosMap[props.character.name];
-  characterPhotos.value = photosData?.photos || [];
-  characterPhotoDescriptions.value = photosData?.descriptions || [];
+  const assets = characterAssetsMap[props.character.name];
+  characterPhotos.value = assets?.photos || [];
+  characterPhotoDescriptions.value = assets?.descriptions || [];
   isPhotosVisible.value = true;
 };
 
 const showAvatarPopup = () => {
-  characterAvatar.value = characterAvatarMap[props.character.name] || '';
+  characterAvatar.value = characterAssetsMap[props.character.name]?.avatar || '';
   isAvatarVisible.value = true;
 };
 </script>

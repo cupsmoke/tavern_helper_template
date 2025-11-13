@@ -1,17 +1,6 @@
-export const characterAvatarMap: Record<string, string> = {
-  叶莲娜·科瓦奇: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTILxGOykAeBwZ4ZDdD_305gR9bbo_xBdSoTw&s',
-  贝瑟妮·琼斯: 'https://pbs.twimg.com/profile_images/1914532532680581124/p4q0j2SV_400x400.jpg',
-  乔治安娜·索拉里:
-    'https://www.hola.com/us/horizon/43/2feb396fc6ca-venice-italy-georgina-rodriguez-attends-a-red-carpet-for-the-movie-enea-at-the-8.jpg',
-  安娜: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ235iCzXlWG51aWeg-yCX73c9zxJ2YOx6Hdw&s',
-  奥克萨娜·佐藤: 'https://www.panthalassanews.com/assets/images/biography/thumb/louisa-khovanski_image.jpg',
-  伊莉娜·科瓦连科: 'https://pbs.twimg.com/media/FflhDcbWAAEZlxW.jpg:small',
-
-  // ... 其他角色的头像URL
-};
-
-export const characterPhotosMap: Record<string, { photos: string[]; descriptions: string[] }> = {
-  叶莲娜·科瓦奇: {
+export const characterAssetsMap: Record<string, { avatar: string; photos: string[]; descriptions: string[] }> = {
+  '叶莲娜·科瓦奇': {
+    avatar: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTILxGOykAeBwZ4ZDdD_305gR9bbo_xBdSoTw&s',
     photos: [
       'https://pbs.twimg.com/media/Ghig_qoWwAA9Bwu.jpg:small',
       'https://pbs.twimg.com/media/GhrAAKfWAAAz3dT.jpg:small',
@@ -25,7 +14,8 @@ export const characterPhotosMap: Record<string, { photos: string[]; descriptions
     ],
     descriptions: ['渔网·雌伏', '渔网·欲望', '窗边眺望', '兔女郎·背影', '厨房', '游戏日', '泡澡', '厨房2', '新生'],
   },
-  贝瑟妮·琼斯: {
+  '贝瑟妮·琼斯': {
+    avatar: 'https://pbs.twimg.com/profile_images/1914532532680581124/p4q0j2SV_400x400.jpg',
     photos: [
       'https://pbs.twimg.com/media/G3fNMXrWkAAu66D.jpg:small',
       'https://pbs.twimg.com/media/Gl2Yz6TaAAAjgdK.jpg:small',
@@ -49,11 +39,16 @@ export const characterPhotosMap: Record<string, { photos: string[]; descriptions
       '公园吊起',
     ],
   },
-  乔治安娜·索拉里: {
-    photos: ['https://pbs.twimg.com/media/FxTzGbvacAAu6jx.jpg:small'],
-    descriptions: ['泳装女皇'],
+  '乔治安娜·索拉里': {
+    avatar: 'https://pbs.twimg.com/profile_images/1820571927649320960/0U3rs47a.jpg',
+    photos: [
+      'https://pbs.twimg.com/media/GSgFnlIXAAACsiF.jpg:small',
+      'https://pbs.twimg.com/media/GLFl5SpbUAA65lU.jpg:small',
+    ],
+    descriptions: ['足球', '等待'],
   },
-  安娜: {
+  '妮娜·沃尔科娃': {
+    avatar: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ235iCzXlWG51aWeg-yCX73c9zxJ2YOx6Hdw&s',
     photos: [
       'https://pbs.twimg.com/media/GfhEYB8WAAAT8cD.jpg:small',
       'https://pbs.twimg.com/media/FsRh3rYWYAEUt3n.jpg:small',
@@ -63,7 +58,8 @@ export const characterPhotosMap: Record<string, { photos: string[]; descriptions
     ],
     descriptions: ['冬日雪景', '渔网', '冬日雪景2', 'mini', '兔女郎'],
   },
-  奥克萨娜·佐藤: {
+  '奥克萨娜·佐藤': {
+    avatar: 'https://www.panthalassanews.com/assets/images/biography/thumb/louisa-khovanski_image.jpg',
     photos: [
       'https://pbs.twimg.com/media/G5P6IQ5WEAEBQzl.jpg:small',
       'https://pbs.twimg.com/media/G5fS8RWW0AARQSA.jpg:small',
@@ -99,7 +95,8 @@ export const characterPhotosMap: Record<string, { photos: string[]; descriptions
       '露营',
     ],
   },
-  伊莉娜·科瓦连科: {
+  '伊莉娜·科瓦连科': {
+    avatar: 'https://pbs.twimg.com/media/FflhDcbWAAEZlxW.jpg:small',
     photos: [
       'https://pbs.twimg.com/media/F4_NVouXAAAt7RW.jpg:small',
       'https://pbs.twimg.com/media/F283DMlWEAIwaGt.jpg:small',
@@ -127,5 +124,53 @@ export const characterPhotosMap: Record<string, { photos: string[]; descriptions
       '海滨之花',
     ],
   },
-  // ... 其他角色的照片数据
+  '坎蒂·雷耶斯': {
+    avatar: 'https://pbs.twimg.com/profile_images/1890520772189270016/Kg7NkSAB.jpg',
+    photos: [
+      'https://pbs.twimg.com/media/G5AkEUSXQAEAvJn.jpg:small',
+      'https://pbs.twimg.com/media/GkLhX1qWMAAPUKn.jpg:small',
+      'https://pbs.twimg.com/media/GuaC9mPbEAE00_j.jpg:small',
+      'https://pbs.twimg.com/media/GlzIFghXEAARoAC.jpg:small',
+      'https://pbs.twimg.com/media/GvHYobYXcAAeywU.jpg:small',
+      'https://pbs.twimg.com/media/GpondZSXkAAnBZU.jpg:small',
+      'https://pbs.twimg.com/media/G1D13DoW0AAqoYj.jpg:small',
+      'https://pbs.twimg.com/media/GMGMz0UXEAAyoCk.jpg:small',
+      'https://pbs.twimg.com/media/F3grSceWMB4b421.jpg:small',
+    ],
+    descriptions: ['夫妻', '海滨', '享受日光', '海滩母子', '家中泳池', '背影', '夫妻·聚会', '比基尼', '蹲'],
+  },
+  '科琳娜·科瓦尔斯基': {
+    avatar:
+      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlghSIbekjg7uYrcpK20fSmof9QVgWiaS-clE2krNg97ntPmllrfNpahp5L7u-5ygzW9I&usqp=CAU',
+    photos: [
+      'https://pbs.twimg.com/media/GhdRP9aacAcen4I.jpg:small',
+      'https://pbs.twimg.com/media/Gf-_DbEbEAA_YDk.jpg:small',
+      'https://pbs.twimg.com/media/G4XPH1SasAEpqQs.jpg:small',
+      'https://pbs.twimg.com/media/GyCm3iQaQAEQ_DC.jpg:small',
+      'https://pbs.twimg.com/media/Gy00lQbawAE0qkH.png:small',
+      'https://pbs.twimg.com/media/Gmqj1Jsb0AAEXuq.jpg:small',
+    ],
+    descriptions: ['冬日', '礼物', 'cos小丑女', '舞池', '泳池', '紫色'],
+  },
+  '克莱尔·安德森': {
+    avatar: 'https://pbs.twimg.com/profile_images/1784375999230320640/16IuNRJD_400x400.jpg',
+    photos: [
+      'https://pbs.twimg.com/media/G4llcgnW4AAnrVj.jpg:small',
+      'https://pbs.twimg.com/amplify_video_thumb/1968299641197236224/img/cn6Us9PFENSqdRk6.jpg:small',
+      'https://pbs.twimg.com/media/GpUQGkFWUAAe-sx.jpg:small',
+      'https://pbs.twimg.com/media/GnNJ2yUWwAAnkiw.jpg:small',
+      'https://pbs.twimg.com/media/GjHwZr9bIAI4J8g.jpg:small',
+    ],
+    descriptions: ['学生装', '雌伏', '连衣裙', '年轻活力', '红色'],
+  },
+  '瓦伦蒂娜·莫拉莱斯': {
+    avatar: 'https://pbs.twimg.com/profile_images/1119925485713133570/rrn89RdX_400x400.jpg',
+    photos: [
+      'https://pbs.twimg.com/media/Gxm6dJUaEAA6KrP.jpg:small',
+      'https://pbs.twimg.com/media/G3j_xTNXQAA99Eg.jpg:small',
+      'https://pbs.twimg.com/media/G4Kpqh2W4AAq3zV.jpg:small',
+      'https://pbs.twimg.com/media/GEi6LNma0AEPWaI.jpg:small',
+    ],
+    descriptions: ['礼服', '女仆装', '学生装', '雪地'],
+  },
 };
