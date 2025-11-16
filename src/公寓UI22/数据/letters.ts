@@ -126,7 +126,7 @@ export const letters: Letter[] = [
         triggerableEvents: '--',
       },
       {
-        name: '伊莉娜·科瓦连科',
+        name: '伊莉娜·霍万斯基',
         role: '#twi@milada_moore #迷途的丰腴之鸽 #庇护所的寄生花',
         // 迷航的丰饶之船
         affectionValue: 25,

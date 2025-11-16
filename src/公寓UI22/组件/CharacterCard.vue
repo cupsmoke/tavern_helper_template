@@ -18,12 +18,14 @@
 
     <div class="info-row">
       <span class="info-label">好感度</span>
-      <span class="affection-value">{{ character.affectionValue || 0 }}/100</span>
+      <span class="affection-value" :style="{ color: affectionColor }"
+        >{{ character.affectionValue || 0 }}/100 🌱{{ character.relationshipStage || '未知' }}</span
+      >
     </div>
-    <div class="info-row">
+    <!-- <div class="info-row">
       <span class="info-label">关系阶段</span>
       <span class="info-value">{{ character.relationshipStage || '未知' }}</span>
-    </div>
+    </div> -->
     <div class="info-row">
       <span class="info-label">丈夫状态</span>
       <span class="info-value">{{ character.husbandStatus || '不适用/未知' }}</span>
@@ -63,6 +65,26 @@ const roleTags = computed(() => {
     .split('#')
     .map((s: string) => s.trim())
     .filter(Boolean);
+});
+
+const affectionColor = computed(() => {
+  const value = props.character.affectionValue || 0;
+  let r, g, b;
+
+  if (value >= 0) {
+    // from white (0) to green (100)
+    const ratio = Math.min(value / 100, 1);
+    r = Math.round(180 * (1 - ratio));
+    g = 180;
+    b = Math.round(180 * (1 - ratio));
+  } else {
+    // from red (-100) to white (0)
+    const ratio = Math.max((value + 100) / 100, 0);
+    r = 180;
+    g = Math.round(180 * ratio);
+    b = Math.round(180 * ratio);
+  }
+  return `rgb(${r}, ${g}, ${b})`;
 });
 </script>
 
@@ -161,7 +183,12 @@ $color-text-light: #ecf0f1;
 .affection-value {
   font-size: 14px;
   font-weight: bold;
-  color: $color-accent-red;
+}
+
+.affection-text {
+  font-size: 14px;
+  font-weight: bold;
+  color: #f2f2f2;
 }
 
 .popup-buttons {

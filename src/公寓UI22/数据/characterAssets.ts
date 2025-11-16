@@ -95,7 +95,7 @@ export const characterAssetsMap: Record<string, { avatar: string; photos: string
       '露营',
     ],
   },
-  '伊莉娜·科瓦连科': {
+  '伊莉娜·霍万斯基': {
     avatar: 'https://pbs.twimg.com/media/FflhDcbWAAEZlxW.jpg:small',
     photos: [
       'https://pbs.twimg.com/media/F4_NVouXAAAt7RW.jpg:small',
@@ -172,5 +172,17 @@ export const characterAssetsMap: Record<string, { avatar: string; photos: string
       'https://pbs.twimg.com/media/GEi6LNma0AEPWaI.jpg:small',
     ],
     descriptions: ['礼服', '女仆装', '学生装', '雪地'],
+  },
+  林田早纪: {
+    avatar:
+      'https://scontent-nrt1-2.cdninstagram.com/v/t51.2885-19/455853592_1819236128486645_5744197568154664789_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby44NjkuYzIifQ&_nc_ht=scontent-nrt1-2.cdninstagram.com&_nc_cat=105&_nc_oc=Q6cZ2QET3i8q_z6umWq32--2CU8RuuaNUz70zi34OjiRZf99DpR7rUeJHw4amNTE3zCJUvA&_nc_ohc=YRozt3UZ7ewQ7kNvwGktSyo&_nc_gid=KezYNkxl5ENUQH4pbzYsPA&edm=AP4sbd4BAAAA&ccb=7-5&oh=00_AfhAdL-rmmOx1GB9JuNWb1y3qBvmMdVmJ8NyzJveSfN_pQ&oe=691DEF09&_nc_sid=7a9f4b',
+    photos: [
+      'https://pbs.twimg.com/media/G0MFiZ1bUAQJRaQ.jpg:small',
+      'https://pbs.twimg.com/media/G1FymsJasAA-xCW.jpg:small',
+      'https://pbs.twimg.com/media/Gw03BwgbsAAoMe2.jpg:small',
+      'https://pbs.twimg.com/media/Gu2Rmq3XkAAy0ty.jpg:small',
+      'https://pbs.twimg.com/media/GljoFlaa0AAf8xS.jpg:small',
+    ],
+    descriptions: ['兔女郎', '居家白衬衫', '侧卧', '酒吧', '睡衣'],
   },
 };
