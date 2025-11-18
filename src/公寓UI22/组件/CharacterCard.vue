@@ -39,6 +39,7 @@
       <button class="popup-btn" @click="$emit('showMonologue')">💭 内心独白</button>
       <button class="popup-btn" @click="$emit('showEvents')">⚡ 可触发事件</button>
       <button class="popup-btn" @click="$emit('showPhotos')">📷 查看照片</button>
+      <button class="popup-btn" @click="$emit('showLog')">📝 日志</button>
     </div>
   </div>
 </template>
@@ -57,7 +58,7 @@ const props = defineProps({
   },
 });
 
-defineEmits(['avatarClick', 'showMonologue', 'showEvents', 'showPhotos']);
+defineEmits(['avatarClick', 'showMonologue', 'showEvents', 'showPhotos', 'showLog']);
 
 const roleTags = computed(() => {
   if (!props.character.role) return [];
@@ -193,12 +194,13 @@ $color-text-light: #ecf0f1;
 
 .popup-buttons {
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
   margin: 12px 0;
 }
 
 .popup-btn {
-  flex: 1;
+  flex: 1 1 calc(50% - 4px);
   padding: 8px 12px;
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.2);

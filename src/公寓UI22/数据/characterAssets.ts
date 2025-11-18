@@ -10,9 +10,19 @@ export const characterAssetsMap: Record<string, { avatar: string; photos: string
       'https://pbs.twimg.com/media/Gp3ZXaOWsAAixl4.jpg:small',
       'https://pbs.twimg.com/media/GsrOVmmXsAA0BHU.jpg:small',
       'https://pbs.twimg.com/media/Gy4bhPqWcAAjauA.jpg:small',
-      'https://pbs.twimg.com/media/F3qvXDqXgBEUF0r.jpg:small',
+      'https://pbs.twimg.com/media/F3qvXDqXgBEUF0r.jpg:small'
     ],
-    descriptions: ['渔网·雌伏', '渔网·欲望', '窗边眺望', '兔女郎·背影', '厨房', '游戏日', '泡澡', '厨房2', '新生'],
+    descriptions: [
+      '渔网·雌伏',
+      '渔网·欲望',
+      '窗边眺望',
+      '兔女郎·背影',
+      '厨房',
+      '游戏日',
+      '泡澡',
+      '厨房2',
+      '新生'
+    ]
   },
   '贝瑟妮·琼斯': {
     avatar: 'https://pbs.twimg.com/profile_images/1914532532680581124/p4q0j2SV_400x400.jpg',
@@ -25,7 +35,7 @@ export const characterAssetsMap: Record<string, { avatar: string; photos: string
       'https://pbs.twimg.com/media/GoqnN4nXEAE4gAI.jpg:small',
       'https://pbs.twimg.com/media/Gliv4ZyawAA9RW-.jpg:small',
       'https://pbs.twimg.com/media/G1OVMePbQAA1zMO.jpg:small',
-      'https://pbs.twimg.com/media/Gdz3kfgbEAAwLtb.jpg:small',
+      'https://pbs.twimg.com/media/Gdz3kfgbEAAwLtb.jpg:small'
     ],
     descriptions: [
       '居家自拍',
@@ -36,16 +46,19 @@ export const characterAssetsMap: Record<string, { avatar: string; photos: string
       '倒立',
       '项圈',
       '赤裸骑行派对',
-      '公园吊起',
-    ],
+      '公园吊起'
+    ]
   },
   '乔治安娜·索拉里': {
     avatar: 'https://pbs.twimg.com/profile_images/1820571927649320960/0U3rs47a.jpg',
     photos: [
       'https://pbs.twimg.com/media/GSgFnlIXAAACsiF.jpg:small',
-      'https://pbs.twimg.com/media/GLFl5SpbUAA65lU.jpg:small',
+      'https://pbs.twimg.com/media/GLFl5SpbUAA65lU.jpg:small'
     ],
-    descriptions: ['足球', '等待'],
+    descriptions: [
+      '足球',
+      '等待'
+    ]
   },
   '妮娜·沃尔科娃': {
     avatar: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ235iCzXlWG51aWeg-yCX73c9zxJ2YOx6Hdw&s',
@@ -54,9 +67,15 @@ export const characterAssetsMap: Record<string, { avatar: string; photos: string
       'https://pbs.twimg.com/media/FsRh3rYWYAEUt3n.jpg:small',
       'https://pbs.twimg.com/media/GILGwPcWwAA5KsR.jpg:small',
       'https://pbs.twimg.com/media/F8FupeUXAAAWCkR.jpg:small',
-      'https://pbs.twimg.com/media/F9zh9zVW0AAzT9d.jpg:small',
+      'https://pbs.twimg.com/media/F9zh9zVW0AAzT9d.jpg:small'
     ],
-    descriptions: ['冬日雪景', '渔网', '冬日雪景2', 'mini', '兔女郎'],
+    descriptions: [
+      '冬日雪景',
+      '渔网',
+      '冬日雪景2',
+      'mini',
+      '兔女郎'
+    ]
   },
   '奥克萨娜·佐藤': {
     avatar: 'https://www.panthalassanews.com/assets/images/biography/thumb/louisa-khovanski_image.jpg',
@@ -75,7 +94,7 @@ export const characterAssetsMap: Record<string, { avatar: string; photos: string
       'https://pbs.twimg.com/media/GogeF1zXgAA2bVo.jpg:small',
       'https://pbs.twimg.com/media/Fmm0i1gWYAAkzTm.jpg:small',
       'https://img10.joyreactor.com/pics/post/erotic-erotic-piercing-boobs-9007271.jpeg',
-      'https://img10.joyreactor.com/pics/post/erotic-butt-open-air-8687325.png',
+      'https://img10.joyreactor.com/pics/post/erotic-butt-open-air-8687325.png'
     ],
     descriptions: [
       '日常1',
@@ -92,8 +111,8 @@ export const characterAssetsMap: Record<string, { avatar: string; photos: string
       '楼梯',
       '购物',
       '河边',
-      '露营',
-    ],
+      '露营'
+    ]
   },
   '伊莉娜·霍万斯基': {
     avatar: 'https://pbs.twimg.com/media/FflhDcbWAAEZlxW.jpg:small',
@@ -108,7 +127,7 @@ export const characterAssetsMap: Record<string, { avatar: string; photos: string
       'https://pbs.twimg.com/media/FSyXpZ9WAAMPDx5.jpg:small',
       'https://pbs.twimg.com/media/FRSzedjXoAIIkDL.jpg:small',
       'https://pbs.twimg.com/media/FQYFSqLX0AMwddt.jpg:small',
-      'https://pbs.twimg.com/media/FOrPeeMaIAMlZbO.jpg:small',
+      'https://pbs.twimg.com/media/FOrPeeMaIAMlZbO.jpg:small'
     ],
     descriptions: [
       '衬衫',
@@ -121,8 +140,8 @@ export const characterAssetsMap: Record<string, { avatar: string; photos: string
       '日常·毛衣',
       '晨光',
       '贴近自然',
-      '海滨之花',
-    ],
+      '海滨之花'
+    ]
   },
   '坎蒂·雷耶斯': {
     avatar: 'https://pbs.twimg.com/profile_images/1890520772189270016/Kg7NkSAB.jpg',
@@ -135,22 +154,38 @@ export const characterAssetsMap: Record<string, { avatar: string; photos: string
       'https://pbs.twimg.com/media/GpondZSXkAAnBZU.jpg:small',
       'https://pbs.twimg.com/media/G1D13DoW0AAqoYj.jpg:small',
       'https://pbs.twimg.com/media/GMGMz0UXEAAyoCk.jpg:small',
-      'https://pbs.twimg.com/media/F3grSceWMB4b421.jpg:small',
+      'https://pbs.twimg.com/media/F3grSceWMB4b421.jpg:small'
     ],
-    descriptions: ['夫妻', '海滨', '享受日光', '海滩母子', '家中泳池', '背影', '夫妻·聚会', '比基尼', '蹲'],
+    descriptions: [
+      '夫妻',
+      '海滨',
+      '享受日光',
+      '海滩母子',
+      '家中泳池',
+      '背影',
+      '夫妻·聚会',
+      '比基尼',
+      '蹲'
+    ]
   },
   '科琳娜·科瓦尔斯基': {
-    avatar:
-      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlghSIbekjg7uYrcpK20fSmof9QVgWiaS-clE2krNg97ntPmllrfNpahp5L7u-5ygzW9I&usqp=CAU',
+    avatar: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlghSIbekjg7uYrcpK20fSmof9QVgWiaS-clE2krNg97ntPmllrfNpahp5L7u-5ygzW9I&usqp=CAU',
     photos: [
       'https://pbs.twimg.com/media/GhdRP9aacAcen4I.jpg:small',
       'https://pbs.twimg.com/media/Gf-_DbEbEAA_YDk.jpg:small',
       'https://pbs.twimg.com/media/G4XPH1SasAEpqQs.jpg:small',
       'https://pbs.twimg.com/media/GyCm3iQaQAEQ_DC.jpg:small',
       'https://pbs.twimg.com/media/Gy00lQbawAE0qkH.png:small',
-      'https://pbs.twimg.com/media/Gmqj1Jsb0AAEXuq.jpg:small',
+      'https://pbs.twimg.com/media/Gmqj1Jsb0AAEXuq.jpg:small'
     ],
-    descriptions: ['冬日', '礼物', 'cos小丑女', '舞池', '泳池', '紫色'],
+    descriptions: [
+      '冬日',
+      '礼物',
+      'cos小丑女',
+      '舞池',
+      '泳池',
+      '紫色'
+    ]
   },
   '克莱尔·安德森': {
     avatar: 'https://pbs.twimg.com/profile_images/1784375999230320640/16IuNRJD_400x400.jpg',
@@ -159,9 +194,15 @@ export const characterAssetsMap: Record<string, { avatar: string; photos: string
       'https://pbs.twimg.com/amplify_video_thumb/1968299641197236224/img/cn6Us9PFENSqdRk6.jpg:small',
       'https://pbs.twimg.com/media/GpUQGkFWUAAe-sx.jpg:small',
       'https://pbs.twimg.com/media/GnNJ2yUWwAAnkiw.jpg:small',
-      'https://pbs.twimg.com/media/GjHwZr9bIAI4J8g.jpg:small',
+      'https://pbs.twimg.com/media/GjHwZr9bIAI4J8g.jpg:small'
     ],
-    descriptions: ['学生装', '雌伏', '连衣裙', '年轻活力', '红色'],
+    descriptions: [
+      '学生装',
+      '雌伏',
+      '连衣裙',
+      '年轻活力',
+      '红色'
+    ]
   },
   '瓦伦蒂娜·莫拉莱斯': {
     avatar: 'https://pbs.twimg.com/profile_images/1119925485713133570/rrn89RdX_400x400.jpg',
@@ -169,20 +210,94 @@ export const characterAssetsMap: Record<string, { avatar: string; photos: string
       'https://pbs.twimg.com/media/Gxm6dJUaEAA6KrP.jpg:small',
       'https://pbs.twimg.com/media/G3j_xTNXQAA99Eg.jpg:small',
       'https://pbs.twimg.com/media/G4Kpqh2W4AAq3zV.jpg:small',
-      'https://pbs.twimg.com/media/GEi6LNma0AEPWaI.jpg:small',
+      'https://pbs.twimg.com/media/GEi6LNma0AEPWaI.jpg:small'
     ],
-    descriptions: ['礼服', '女仆装', '学生装', '雪地'],
+    descriptions: [
+      '礼服',
+      '女仆装',
+      '学生装',
+      '雪地'
+    ]
   },
-  林田早纪: {
-    avatar:
-      'https://scontent-nrt1-2.cdninstagram.com/v/t51.2885-19/455853592_1819236128486645_5744197568154664789_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby44NjkuYzIifQ&_nc_ht=scontent-nrt1-2.cdninstagram.com&_nc_cat=105&_nc_oc=Q6cZ2QET3i8q_z6umWq32--2CU8RuuaNUz70zi34OjiRZf99DpR7rUeJHw4amNTE3zCJUvA&_nc_ohc=YRozt3UZ7ewQ7kNvwGktSyo&_nc_gid=KezYNkxl5ENUQH4pbzYsPA&edm=AP4sbd4BAAAA&ccb=7-5&oh=00_AfhAdL-rmmOx1GB9JuNWb1y3qBvmMdVmJ8NyzJveSfN_pQ&oe=691DEF09&_nc_sid=7a9f4b',
+  '三枝绘里香': {
+    avatar: 'https://pbs.twimg.com/media/GnXgTpAaoAAukNr.jpg:small',
     photos: [
       'https://pbs.twimg.com/media/G0MFiZ1bUAQJRaQ.jpg:small',
       'https://pbs.twimg.com/media/G1FymsJasAA-xCW.jpg:small',
       'https://pbs.twimg.com/media/Gw03BwgbsAAoMe2.jpg:small',
       'https://pbs.twimg.com/media/Gu2Rmq3XkAAy0ty.jpg:small',
       'https://pbs.twimg.com/media/GljoFlaa0AAf8xS.jpg:small',
+      'https://static.eroism.net/thumb/20257_14.jpg'
     ],
-    descriptions: ['兔女郎', '居家白衬衫', '侧卧', '酒吧', '睡衣'],
+    descriptions: [
+      '兔女郎',
+      '居家白衬衫',
+      '侧卧',
+      '酒吧',
+      '睡衣',
+      '回眸'
+    ]
   },
+  '林田早纪': {
+    avatar: 'https://pbs.twimg.com/profile_images/1982079268474540032/Ugu0okG4_400x400.jpg',
+    photos: [
+      'https://pbs.twimg.com/media/G11D2h7bAAAuTcJ.jpg:small',
+      'https://bestgirlsexy.com/wp-content/uploads/2023/08/Photobook-Anri-Okita-%E6%B2%96%E7%94%B0%E6%9D%8F-Present-0002-8804128419.jpg',
+      'https://blog-imgs-99.fc2.com/e/r/o/erog/okita_anri_20171027_013s.jpg',
+      'https://img.bakufu.jp/wp-content/uploads/2023/12/231224f_0005.jpg',
+      'https://static.eroism.net/thumb/17731_1.jpg'
+    ],
+    descriptions: [
+      '白色睡裙',
+      '红色上衣',
+      '色情旗袍',
+      '粉色紧身裙',
+      '绿色'
+    ]
+  },
+  '宫本惠子': {
+    avatar: 'https://pbs.twimg.com/media/G1GX-qzb0AA80dF.jpg:small',
+    photos: [
+      'https://pbs.twimg.com/media/GvQFm07WkAAjt6s.jpg:small',
+      'https://static.eroism.net/thumb/20199_7.jpg',
+      'https://static.eroism.net/thumb/18099_14.jpg',
+      'https://static.eroism.net/thumb/20199_13.jpg'
+    ],
+    descriptions: [
+      '居家',
+      '浴室',
+      '冰箱',
+      '渴望'
+    ]
+  },
+  '三枝凛': {
+    avatar: 'https://pbs.twimg.com/profile_images/1800448241202593792/vXhOb6GE_400x400.jpg',
+    photos: [
+      'https://static.eroism.net/thumb/19721_1.jpg',
+      'https://static.eroism.net/thumb/20167_1.jpg',
+      'https://static.eroism.net/thumb/20167_4.jpg',
+      'https://static.eroism.net/thumb/19567_1.jpg',
+      'https://static.eroism.net/thumb/20167_5.jpg',
+      'https://pbs.twimg.com/media/G2scEv4asAAK5ds.jpg:small'
+    ],
+    descriptions: [
+      '海滨',
+      '沙发',
+      '入浴',
+      '和服',
+      '阳光',
+      '婚纱'
+    ]
+  },
+  '渡边美咲': {
+    avatar: 'https://pbs.twimg.com/profile_images/1932003480157491200/q3wgWfN3_400x400.jpg',
+    photos: [
+      'https://image.opq.pw/wp-content/uploads/2022/03/06212741/0_17-682x1024.jpg',
+      'https://image.opq.pw/wp-content/uploads/2022/03/06212800/0_11-768x1024.jpg'
+    ],
+    descriptions: [
+      '外出服',
+      '和服'
+    ]
+  }
 };
